@@ -34,11 +34,18 @@ nav {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s;
+    border: 2px ;
+    border-color: #333333; 
+    padding: 10px 20px; /* Espaciado interno para el botón */
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+    border-radius: 12px; /* Bordes redondeados para estilo de botón */
+    display: inline-block; /* Hace que el padding se aplique correctamente */
 }
 
 .nav-links a:hover {
     color: #003cff;
+    background-color: rgba(0, 60, 255, 0.1); /* Fondo azul claro en hover */
+    border-color: #003cff; /* Color del borde en hover */
 }
 
 .hamburger {
