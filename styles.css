@@ -14,18 +14,29 @@ nav {
 }
 
 .logo {
-    color: #003cff;
     font-size: 24px;
     font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(5, 21, 92), 240, 240);
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
 }
-
 .nav-links {
+  
     list-style: none;
     display: flex;
     justify-content: center; /* Centra los enlaces horizontalmente */
     flex: 1; /* Permite que el contenedor de enlaces ocupe el espacio disponible */
 }
 
+
+audio {
+    position: absolute;
+    left: -9999px;
+} 
 .nav-links li {
     margin: 0 15px;
 }
@@ -34,8 +45,8 @@ nav {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    border: 2px ;
-    border-color: #333333; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
     padding: 10px 20px; /* Espaciado interno para el botón */
     transition: color 0.3s, background-color 0.3s, border-color 0.3s;
     border-radius: 12px; /* Bordes redondeados para estilo de botón */

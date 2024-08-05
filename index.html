@@ -8,11 +8,25 @@
 </head>
 <body>
     <nav>
-        <div class="logo">Pro Link</div>
+        <div class="logo" id="playAudio">Pro Link</div>
         <ul class="nav-links">
             <li><a href="https://www.notion.so/tradesinlimites/Home-8276ff8d06484d5ea2a75a778a3a55c0" target="_blank">Home</a></li>
                         <li><a href="https://www.notion.so/tradesinlimites/4df7ea3aa8834e88a609bdf94fa36a5d?v=25c40589bb554fe795684ebc46d7c50e" target="_blank">Recursos</a></li>
         </ul>
+
+        <audio id="myAudio">
+            <source src="ringtones-the-avengers.mp3" type="audio/mp3">
+            Tu navegador no soporta el elemento <code>audio</code>.
+        </audio>
+        <script>
+            document.getElementById('playAudio').addEventListener('click', function() {
+                var audio = document.getElementById('myAudio');
+                audio.play().catch(function(error) {
+                    console.log('Error al intentar reproducir el audio:', error);
+                });
+            });
+        </script>
+
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
